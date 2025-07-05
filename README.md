@@ -1,12 +1,8 @@
-# 🛡️ LLM Guard
 
-[![PyPI version](https://badge.fury.io/py/llm-guard.svg)](https://badge.fury.io/py/llm-guard)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python 3.7+](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/)
 
 > Lightweight, fast, and accurate safety toolkit for LLM applications. No complex setup, no expensive APIs, just `pip install llm-guard` and go.
 
-## 🚀 Quick Start
+## Quick Start
 
 ```python
 from llm_guard import SafetyGuard
@@ -23,16 +19,9 @@ else:
     print(f"Blocked: {result.reason}")
 ```
 
-## 🎯 Features
 
-- **🏃 Fast**: <20ms latency for all safety checks combined
-- **🎯 Accurate**: State-of-the-art detection across multiple safety dimensions
-- **🔒 Privacy-First**: Runs 100% locally, no data leaves your server
-- **🛠️ Easy Integration**: Works with any LLM or framework
-- **📦 Lightweight**: Minimal dependencies, small footprint
-- **🔧 Customizable**: Add your own rules and thresholds
 
-## 📋 What It Detects
+## What It Detects
 
 - **Toxicity & Hate Speech**: Profanity, harassment, discrimination
 - **PII (Personal Information)**: SSN, credit cards, emails, phone numbers
@@ -46,7 +35,7 @@ else:
 pip install llm-guard
 ```
 
-## 💡 More Examples
+##  More Examples
 
 ### PII Detection and Redaction
 
@@ -80,23 +69,17 @@ guard.add_custom_rule(
 )
 ```
 
-## 📊 Benchmarks
+## Benchmarks
 
 | Check Type | Latency | Accuracy |
 |------------|---------|----------|
 | Toxicity | 8ms | 92.5% |
 | PII Detection | 3ms | 96.8% |
 | Prompt Injection | 5ms | 94.2% |
-| All Checks | 18ms | - |
 
-## 🤝 Contributing
 
-We love contributions! Check out our [Contributing Guide](CONTRIBUTING.md) to get started.
 
-## 📄 License
+## License
 
 MIT License - see [LICENSE](LICENSE) file for details.
 
----
-
-**Ready to make your LLM applications safer?** Get started with `pip install llm-guard` today!
